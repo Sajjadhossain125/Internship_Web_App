@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  min-height: 100vh;
+  background: #f0f2f5;
+}
+.main-container {
+  display: flex;
+  min-height: 100vh;
+}
+/* Left side design */
+.left-side {
+  flex: 1;
+  background: rgb(46, 100, 110);
+  background: linear-gradient(
+    90deg,
+    rgba(46, 100, 110, 1) 0%,
+    rgba(20, 20, 22, 1) 35%,
+    rgba(29, 30, 31, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.left-side h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.left-side p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  text-align: center;
+  max-width: 400px;
+}
+.left-side img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+/* Right side (Login Form) */
+.right-side {
+  flex: 1;
+  background: rgb(46, 100, 110);
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 0%,
+    rgba(20, 20, 22, 1) 35%,
+    rgba(29, 30, 31, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: #1d1c1c;
+}
+.login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.login-header h1 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.login-header p {
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+.registration-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: #1d1c1c;
+}
+.registration-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.registration-header h1 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.registration-header p {
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+.form-group {
+  margin-bottom: 1.5rem;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+.login-button {
+  width: 100%;
+  padding: 1rem;
+  background: #fafbfc;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.login-button:hover {
+  background: #357abd;
+}
+.forgot-password {
+  text-align: center;
+  margin-top: 1rem;
+}
+.forgot-password a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+.registation {
+  text-align: center;
+  margin-top: 1rem;
+}
+.registation a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.registation a:hover {
+  text-decoration: underline;
+}
+.already-account {
+  text-align: center;
+  margin-top: 1rem;
+}
+.already-account a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.already-account a:hover {
+  text-decoration: underline;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .left-side,
+  .right-side {
+    flex: none;
+    width: 100%;
+  }
+  .left-side {
+    padding: 1rem;
+  }
+  .right-side {
+    padding: 1rem;
+  }
+}
+.animated-text {
+  font-family: "Arial Black", sans-serif;
+  font-size: 4em;
+  position: relative;
+  white-space: nowrap;
+}
+
+/* T Letter Animation */
+.St-letter {
+  display: inline-block;
+  color: #4a90e2;
+  font-size: 1.5em;
+  margin-right: 10px;
+  animation: tGlow 2s infinite;
+  text-shadow: 0 0 10px #4a90e2;
+}
+
+@keyframes tGlow {
+  0%,
+  100% {
+    text-shadow: 0 0 10px #4a90e2;
+  }
+  50% {
+    text-shadow: 0 0 30px #4a90e2, 0 0 40px #4a90e2;
+  }
+}
+
+.word {
+  display: inline-block;
+  color: white;
+  animation: slideIn 1s forwards;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.word.industrial {
+  animation-delay: 0.5s;
+}
+
+.word.training {
+  animation-delay: 1s;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Letters animation */
+.letter {
+  display: inline-block;
+  animation: wavyText 2s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes wavyText {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Gradient background effect */
+.gradient-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+  animation: gradientShift 10s infinite;
+  z-index: -1;
+}
+
+@keyframes gradientShift {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(30deg);
+  }
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+  .animated-text {
+    font-size: 2em;
+  }
+  .St-letter {
+    font-size: 1.2em;
+  }
+}

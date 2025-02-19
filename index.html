@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Industrial Training Portal</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body >
+    <!-- Smart Navigation Bar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top smart-navbar "
+    >
+      <div class="container-fluid">
+        <!-- Brand Logo -->
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-industry"></i> Industrial Training
+        </a>
+
+        <!-- Toggle Button for Mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <i class="fas fa-home"></i> Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="student_dashboard.html">
+                <i class="fas fa-tachometer-alt"></i> Dashboard
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fas fa-building"></i> Companies
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Company List</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Apply for Internship</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Featured Companies</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-envelope"></i> Contact Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-info-circle"></i> About
+              </a>
+            </li>
+          </ul>
+
+          <!-- Search Bar -->
+          <form class="d-flex me-3">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search Companies"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+
+          <!-- User Profile and Notifications -->
+          <div class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle d-flex align-items-center"
+                href="#"
+                id="profileDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <!-- Circular Profile Icon -->
+                <div class="profile-circle">
+                  <i class="fas fa-user"></i>
+                </div>
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="profileDropdown"
+              >
+                <!-- User Name -->
+                <span class="ms-2">Md Sajjad hossen</span>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="login-system.html">Logout</a></li>
+              </ul>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+ <section class="container_home">
+ 
+    <div class="home_section">
+        <img src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2022/03/16180754/software-engineer-job-skills-1.jpg" alt="Industrial Training">
+        <div class="overlay">
+          <h1>Welcome to Industrial Training</h1>
+          <p>Empowering your career with hands-on experience and industry insights.</p>
+        </div>
+      </div>
+
+      
+      <div class="advertisement_container">
+        <div class="ad_cards">
+          <!-- Card 1 -->
+          <div class="card">
+            <div class="card-body">
+              <h1 class="card-title">Software Development</h1>
+              <hr class="card-divider" />
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit saepe
+                recusandae et quidem aut ex deserunt sunt ad adipisci esse, aperiam
+                modi, magni sint, perferendis reprehenderit nisi unde! Quae, iste!
+              </p>
+            </div>
+          </div>
+      
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="card-body">
+              <h1 class="card-title">Data Science</h1>
+              <hr class="card-divider" />
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit saepe
+                recusandae et quidem aut ex deserunt sunt ad adipisci esse, aperiam
+                modi, magni sint, perferendis reprehenderit nisi unde! Quae, iste!
+              </p>
+            </div>
+          </div>
+      
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="card-body">
+              <h1 class="card-title">UI/UX Design</h1>
+              <hr class="card-divider" />
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit saepe
+                recusandae et quidem aut ex deserunt sunt ad adipisci esse, aperiam
+                modi, magni sint, perferendis reprehenderit nisi unde! Quae, iste!
+              </p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="card-body">
+              <h1 class="card-title">UI/UX Design</h1>
+              <hr class="card-divider" />
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit saepe
+                recusandae et quidem aut ex deserunt sunt ad adipisci esse, aperiam
+                modi, magni sint, perferendis reprehenderit nisi unde! Quae, iste!
+              </p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="card-body">
+              <h1 class="card-title">UI/UX Design</h1>
+              <hr class="card-divider" />
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit saepe
+                recusandae et quidem aut ex deserunt sunt ad adipisci esse, aperiam
+                modi, magni sint, perferendis reprehenderit nisi unde! Quae, iste!
+              </p>
+            </div>
+          </div>
+      
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="card-body">
+              <h1 class="card-title">UI/UX Design</h1>
+              <hr class="card-divider" />
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit saepe
+                recusandae et quidem aut ex deserunt sunt ad adipisci esse, aperiam
+                modi, magni sint, perferendis reprehenderit nisi unde! Quae, iste!
+              </p>
+            </div>
+          </div>
+      
+      
+      
+          <!-- Card 4 -->
+          <div class="card">
+            <div class="card-body">
+              <h1 class="card-title">Cloud Computing</h1>
+              <hr class="card-divider" />
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit saepe
+                recusandae et quidem aut ex deserunt sunt ad adipisci esse, aperiam
+                modi, magni sint, perferendis reprehenderit nisi unde! Quae, iste!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      
+
+      <!-- Company List -->
+      <section class="company_list">
+        <h3>Available Companies</h3>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="company_card">
+              <h4>Company A</h4>
+              <p>Location: New York</p>
+              <p>Positions: Software Engineer, Data Analyst</p>
+              <button class="btn btn-primary">Apply Now</button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="company_card">
+              <h4>Company B</h4>
+              <p>Location: San Francisco</p>
+              <p>Positions: Marketing Intern, UI/UX Designer</p>
+              <button class="btn btn-primary">Apply Now</button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="company_card">
+              <h4>Company C</h4>
+              <p>Location: London</p>
+              <p>Positions: Business Analyst, Product Manager</p>
+              <button class="btn btn-primary">Apply Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+ </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white text-center py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Home</a></li>
+              <li><a href="#" class="text-white">Dashboard</a></li>
+              <li><a href="#" class="text-white">Company List</a></li>
+              <li><a href="#" class="text-white">Contact Us</a></li>
+              <li><a href="#" class="text-white">About</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact Info</h5>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 123 Main St, City, Country
+            </p>
+            <p><i class="fas fa-phone"></i> +123 456 7890</p>
+            <p><i class="fas fa-envelope"></i> info@industrialtraining.com</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Follow Us</h5>
+            <a href="#" class="text-white me-3"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-white me-3"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-white me-3"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <hr class="bg-light" />
+        <p class="mb-0">
+          &copy; 2023 Industrial Training Portal. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS (Required for Carousel and Navbar) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
