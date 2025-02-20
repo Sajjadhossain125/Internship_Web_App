@@ -199,10 +199,10 @@ p {
   font-weight: bold;
 }
 /* Companies List*/
-.Companies_container {
+.companies_container {
   margin-top: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 8px rgba(235, 222, 45, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 
   display: flex;
@@ -211,9 +211,9 @@ p {
   background-color: white;
 }
 .Companies_list {
-  width: 400px;
-  height: 100vh;
-  background-color: #f5e839;
+  width: 40%;
+  height: 170vh;
+  background-color: #e6f13f;
   border-radius: 5px;
 }
 .Companies_list h2 {
