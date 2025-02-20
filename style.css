@@ -224,6 +224,20 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .Companies_list {
+    width: 100%; /* Make it full width */
+    height: auto; /* Adjust height dynamically */
+    padding: 20px; /* Add some padding */
+    border-radius: 0; /* Remove border-radius for a better fit */
+  }
+
+  .Companies_list h2 {
+    margin-top: 20px; /* Reduce margin for better spacing */
+    font-size: 1.2rem; /* Adjust font size */
+  }
+}
+
+@media screen and (max-width: 768px) {
   .avail_services {
     width: 100%; /* Make it full width */
     height: auto; /* Adjust height dynamically */
